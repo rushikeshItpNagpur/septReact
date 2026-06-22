@@ -1,0 +1,91 @@
+Student Task Management System (30 Marks)
+
+
+Problem Statement
+
+Create a Student Task Management System.
+
+The application should have the following components:
+
+App
+|
+|-- StudentForm
+|
+|-- StudentList
+      |
+      |-- StudentCard
+Functional Requirements
+
+1. Add Student
+
+StudentForm should contain:
+
+Student Name input
+Course input
+Add Student button
+
+When the button is clicked:
+
+Data should be sent from StudentForm (Child) to App (Parent).
+App should store all students in state.
+
+Example:
+
+{
+ id:1,
+ name:"Rahul",
+ course:"MERN",
+ completed:false
+}
+
+
+2. Display Students
+
+App should pass the student data to StudentList.
+
+StudentList should pass individual student data to StudentCard.
+
+Display:
+
+Name: Rahul
+Course: MERN
+
+
+[Complete] [Delete]
+
+
+3. Complete Student Task
+
+When Complete is clicked:
+
+StudentCard should send the student id back to App.
+App should update that student's completed status.
+
+If completed:
+
+Status : Completed
+
+Else:
+
+Status : Pending
+
+
+4. Delete Student
+
+When Delete is clicked:
+
+StudentCard should send the id to App.
+App should remove that student.
+
+
+5. Dashboard
+
+Display:
+
+Total Students : 5
+
+Completed : 2
+
+Pending : 3
+
+These values must update automatically.
